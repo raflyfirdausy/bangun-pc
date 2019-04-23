@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_above="@+id/btn_logout"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="65dp"
+                        android:src="@mipmap/ic_iconbpc"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="monospace"
+                            android:text="Riwayat Rakitan"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Silahkan Login Terlebih Dahulu"
+                            android:textStyle="normal"
+                            android:textSize="13sp"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Konten Ga Ada Data-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/konten_gaAdaData"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/notfound"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:text="Belum Ada Riwayat yang Tersimpan"
+                            android:fontFamily="monospace"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Semua riwayat enkripsi kamu akan terdaftar disini. Ayo mulai Enkripsi pesanmu sekarang juga!"
+                            android:fontFamily="monospace"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="normal"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--Konten Belum Login-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/konten_belumLogin"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/user"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Anda Belum Masuk"
+                            android:fontFamily="monospace"
+                            android:textSize="20dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:paddingTop="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="Silahkan Daftar / Masuk terlebih dahulu untuk menggunakan fitur ini"
+                            android:fontFamily="monospace"
+                            android:textSize="15dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="normal"
+                            android:paddingTop="5dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="15dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <Button
+                                    android:id="@+id/btn_daftar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/blue"
+                                    android:textColor="@color/white"
+                                    android:text="Daftar"
+                                    android:textSize="18dp"
+                                    android:fontFamily="monospace"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <Button
+                                    android:id="@+id/btn_masuk"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/colorAccent"
+                                    android:textColor="@color/white"
+                                    android:text="MASUK"
+                                    android:textSize="18dp"
+                                    android:fontFamily="monospace"
+                                    android:textStyle="bold"/>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <com.google.android.gms.common.SignInButton
+                                    android:id="@+id/btn_sign_google"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </com.google.android.gms.common.SignInButton>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--Konten Riwayat-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_kontenx"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:visibility="gone">
+                </android.support.v7.widget.RecyclerView>
+
+                <!--Konten Daftar-->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sv_daftar"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:paddingTop="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextDekripsi">
+                            <EditText
+                                android:id="@+id/et_email_daftar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_marginTop="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextDekripsi">
+                            <EditText
+                                android:id="@+id/et_password_daftar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/til_chiperEnkrip"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextDekripsi">
+                            <EditText
+                                android:id="@+id/et_password_daftar2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPassword"
+                                android:hint="Ulangi Password"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:weightSum="2">
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <Button
+                                    android:id="@+id/btn_bataldaftar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="BATAL"
+                                    android:layout_gravity="end"
+                                    android:fontFamily="monospace"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:backgroundTint="@color/colorAccent"
+                                    style="@style/Widget.AppCompat.Button.Colored"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                                <Button
+                                    android:id="@+id/btn_daftarHide"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="DAFTAR"
+                                    android:layout_gravity="end"
+                                    android:fontFamily="monospace"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    android:backgroundTint="@color/blue"
+                                    style="@style/Widget.AppCompat.Button.Colored"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <!--Konten Login-->
+                <ScrollView
+                    android:id="@+id/sv_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="30dp"
+                        android:paddingRight="30dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/TextEnkripsi">
+
+                            <EditText
+                                android:id="@+id/et_email_login"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:theme="@style/TextEnkripsi">
+
+                            <EditText
+                                android:id="@+id/et_password_login"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/btn_batalLogin"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:backgroundTint="@color/colorAccent"
+                                    android:fontFamily="monospace"
+                                    android:text="BATAL"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <Button
+                                    android:id="@+id/btn_loginHide"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:backgroundTint="@color/blue"
+                                    android:fontFamily="monospace"
+                                    android:text="LOGIN"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:text="LOGOUT"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                style="@style/Widget.AppCompat.Button.Colored"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

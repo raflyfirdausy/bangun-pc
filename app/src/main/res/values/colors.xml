@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b95af</color>
+    <color name="colorPrimaryDark">#167083</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="kuning">#f8cf2c</color>
+
+    <!--color untuk gradient tansition-->
+    <color name="purple_500">#9c27b0</color>
+    <color name="deep_purple_500">#673ab7</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="bg_selected">#8a898989</color>
+    <color name="transparan">#00898989</color>
+
+    <color name="blue">#3189d1</color>
+    <color name="green">#31d164</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".amd.Activity_pilihsoketamd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Pilih Socket AMD "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingBottom="20dp"
+                />
+
+            <Button
+
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:onClick="tr4"
+                android:text="TR4"
+                android:textColor="@color/kuning"
+                app:backgroundTint="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="am4"
+                android:text="AM4"
+                android:textColor="@color/kuning"
+                app:backgroundTint="@color/colorPrimary"
+                android:textStyle="bold"
+               />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:onClick="am3"
+                android:text="AM3"
+                android:textColor="@color/kuning"
+                app:backgroundTint="@color/colorPrimary"
+                android:textStyle="bold"
+               />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".intel.Activity_pilihsoketintel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Socket Intel "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"/>
+
+    <Button
+
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="lga2066"
+        android:text="LGA 2066"
+        android:textColor="@color/kuning"
+        app:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="lga1151"
+        android:text="LGA 1151"
+        android:textColor="@color/kuning"
+        app:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="lga1150"
+        android:text="LGA 1150"
+        android:textColor="@color/kuning"
+        app:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

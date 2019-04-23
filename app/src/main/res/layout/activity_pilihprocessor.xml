@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayouta"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_list"
+    android:weightSum="2"
+    tools:context=".Activity_pilihprocessor">
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/amdlogo"
+            android:onClick="amdpd"
+            android:layout_weight="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/intellogo"
+            android:layout_weight="1"
+            android:onClick="intelpd"
+            android:text="" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

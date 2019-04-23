@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/newsinfo"
+            android:icon="@drawable/ic_news"
+            android:title="@string/newsinfo" />
+        <item
+            android:id="@+id/tutorialmerakit"
+            android:icon="@drawable/ic_tmerakit"
+            android:title="@string/TutorMerakit" />
+        <item
+            android:id="@+id/tutorialinstalos"
+            android:icon="@drawable/ic_tinstalos"
+            android:title="@string/TutorInstalos" />
+
+        <item
+            android:id="@+id/Penyelmasalah"
+            android:icon="@drawable/ic_penyemasalah"
+            android:title="@string/Penyelmasalah" />
+
+        <item
+            android:id="@+id/tipstrik"
+            android:icon="@drawable/ic_lightbulb_outline_black_24dp"
+            android:title="@string/Tipstrik" />
+
+        <item
+            android:id="@+id/pojokgamer"
+            android:icon="@drawable/ic_pojokgamer"
+            android:title="@string/Pojokgamer" />
+        <item
+            android:id="@+id/tentangapk"
+            android:icon="@drawable/ic_tentang"
+            android:title="@string/Tentangapk" />
+    </group>
+
+    <item android:title=" ">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/exit" />
+        </menu>
+    </item>
+
+</menu>

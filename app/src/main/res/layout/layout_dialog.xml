@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_chiperEnkrip"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:theme="@style/TextDialog">
+        <EditText
+            android:id="@+id/et_namaFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama File"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bangun PC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Bangun PC</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_Login">Login</string>
+    <string name="newsinfo">GNews Komputer</string>
+    <string name="TutorMerakit">Tutorial Merakit</string>
+    <string name="TutorInstalos">Tutorial Instal OS</string>
+    <string name="Tipstrik">Tips dan Trik</string>
+    <string name="Penyelmasalah">Penyelesaian Masalah</string>
+    <string name="Pojokgamer">Referensi Paket Pc</string>
+    <string name="Tentangapk">Tentang Aplikasi</string>
+    <string name="namabarang">Nama Barang</string>
+    <string name="exit">Exit</string>
+    <string name="harga">Rp 0</string>
+    <string name="tidak_memilih_barang">Tidak Memilih Barang</string>
+    <string name="gagal">Simpan Gagal ! Nama File harus diisi !</string>
+    <string name="login_dulu">Anda harus Login terlebih dahulu</string>
+    <string name="rakit_baru">Rakit Baru</string>
+
+
+</resources>
